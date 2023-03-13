@@ -57,6 +57,10 @@ function getMultiply(num1, num2){
 const finalResult = getMultiply(100, 300);
 //console.log(finalResult);
 
+
+
+
+
 const numbers= [10, 20, 30, 40, 50];
 const Result = numbers.indexOf(30);
 //console.log(Result);
@@ -65,3 +69,54 @@ const Result = numbers.indexOf(30);
 const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 
 //console.log(beasts.indexOf('duck'));
+
+//console.log(beasts.length);
+
+beasts.push(5000)
+console.log(beasts);
+
+// for loop
+
+// for(let i = 0; i< 20; i++){
+    
+//     console.log("The number is " + i );
+
+// }
+
+for(let i =20; i>= 0; i--){
+    console.log('This number is '+ i);
+}
+
+// while loop;
+
+let i =1;
+
+while ( i<20){
+    i++;
+    console.log(i);
+}
+
+console.log('---------------------------')
+
+
+let d = 21;
+while( d>=1){
+    console.log(d);
+    d--;
+}
+
+
+// object;
+
+const student = {
+    name: 'Samad saifullah',
+    age: 28,
+    book: ['math', 'english', 'Quran', 'hadid'],
+};
+ console.log(student.age);
+
+ console.log(student['age']);
+
+
+ const myVar = 'name'
+ console.log(student[myVar]);
