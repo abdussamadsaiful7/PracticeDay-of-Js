@@ -7,13 +7,21 @@ const products = [
 ];
 
 const brands = products.map(product => product.brand);
-console.log(brands);
+//console.log(brands);
 
 const names = products.map(product => product.name);
-console.log(names);
+//console.log(names);
 
 const prices =  products.map(x => x.price);
-console.log(prices);
+//console.log(prices);
 
 const colors = products.map(samad => samad.color);
-console.log(colors);
+//console.log(colors);
+
+products.forEach(product => console.log(product.name));
+
+products.forEach(saiful => console.log(saiful.price));
+
+products.forEach(samad => console.log(samad.brand));
+
+products.forEach(Esaife => console.log(Esaife.color));
