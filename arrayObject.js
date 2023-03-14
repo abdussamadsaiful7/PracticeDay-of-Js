@@ -18,10 +18,69 @@ const prices =  products.map(x => x.price);
 const colors = products.map(samad => samad.color);
 //console.log(colors);
 
-products.forEach(product => console.log(product.name));
+//products.forEach(product => console.log(product.name));
+//
+//products.forEach(saiful => console.log(saiful.price));
+//
+//products.forEach(samad => console.log(samad.brand));
+//
+//products.forEach(Esaife => console.log(Esaife.color));
 
-products.forEach(saiful => console.log(saiful.price));
 
-products.forEach(samad => console.log(samad.brand));
+// filter, find, incudes
 
-products.forEach(Esaife => console.log(Esaife.color));
+const cheap = products.filter(product => product.price <= 20000);
+//console.log(cheap);
+
+const choose = products.filter(samad => samad.price < 25000);
+//console.log(choose);
+
+
+const specificName = products.filter(product => product.name.includes('n'));
+//console.log(specificName);
+
+const specificName2 = products.filter(p=> p.brand.includes('y'))
+//console.log(specificName2);
+
+//console.log('-----------------------------------');
+
+const specificProduct = products.find(p => p.name.includes('n'));
+//console.log(specificProduct);
+
+//destructure 
+//array, object,
+
+const numbers3 = [42, 65];
+const [x, y] = numbers3;
+//console.log(x, y);
+
+const student = {
+    name: 'Samad Saiful',
+    Age: 28,
+    books: ['quran', 'hadid', 'fiqah', 'Life story of Mohammud'],
+}
+//const [first, second, third] = student.books;
+//console.log(first, second, third);
+
+
+//Object destructuring
+//console.log('-------------------------------');
+
+const employee = {
+    id: 'VS Code',
+    designation: 'Developer',
+    machine: 'Windows server',
+    language: ['html', 'css', 'js', 'python'],
+    specification: {
+        height: 66,
+        weight: 67,
+    },
+    address: 'Kumarkhali, Noakhali',
+    drink: 'Water',
+};
+
+//const {machine, id} =employee;
+//const {height, weight} =employee.specification;
+const [first, second] = employee.language;
+
+console.log (first, second);
