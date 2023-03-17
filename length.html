@@ -9,10 +9,23 @@
 <body>
     <script>
         let geek =['samad', 'saiful', 'fahim', 'arif', 'mim', 'zim', 'rim', 'sim'];
-        document.write("LengthPosition: ",geek.length );
+        document.write("LengthPosition: ",geek.length + "<br>");
         
         let position = geek.indexOf('sim');
-        document.write('   indexPosition:', position);
+        document.write('   indexPosition:', position +'<br>');
+
+        geek.push('Aaaaaa', 'Bbbbbb', 'Cccccc');
+        document.write('NewArray into push: ',geek + "<br>");
+
+        let geekLength = geek.push();
+        document.write(geekLength +"<br>");
+
+        geek.pop();
+        document.write(geek + "<br>");
+
+        let geek_Removed = geek.pop();
+        document.write(geek_Removed);
+
 
     </script>
 </body>
