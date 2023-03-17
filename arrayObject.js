@@ -84,3 +84,12 @@ const employee = {
 const [first, second] = employee.language;
 
 console.log (first, second);
+
+
+// const add1 = function add1(first, second){
+//     const total =(first, second)
+//     return total(10, 20)
+// }
+// console.log(add1());
+
+
